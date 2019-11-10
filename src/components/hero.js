@@ -24,17 +24,21 @@ const TextBox = styled('div')`
 
   h1 {
     text-shadow: 1px 1px 3px #eeddff66;
-    font-size: 2.25rem;
+    font-size: 2.75rem;
   }
 
   p,
   a {
-    color: #222;
+    color: white;
     margin-top: 0;
+    font-weight: bold;
   }
 
   a {
+    color: #1d1a21;
     margin-top: 0.5rem;
+    text-decoration: none;
+    font-size: .9rem;
   }
 `;
 
@@ -53,9 +57,9 @@ const Hero = () => {
   return (
     <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <TextBox>
-        <h1>Frontend Masters + Gatsby &hearts;</h1>
+        <h1>Technologically Challenged 💭</h1>
         <p>
-          Hello Party People <Link to="/about/">Learn about me &rarr;</Link>
+          Solutions to Common Web Development Issues <Link to="/about/">Learn about me &rarr;</Link>
         </p>
       </TextBox>
     </ImageBackground>

@@ -4,7 +4,7 @@ import { css } from '@emotion/core';
 import { Link } from 'gatsby';
 
 const NavLink = styled(Link)`
-  color: #222;
+  color: white;
   font-size: 1rem;
   font-weight: ${props => props.fontWeight || 'normal'};
   line-height: 1;
@@ -14,6 +14,7 @@ const NavLink = styled(Link)`
 
   &.current-page {
     border-bottom: 2px solid #222;
+    color: #222;
   }
 
   &:last-of-type {
@@ -24,7 +25,7 @@ const NavLink = styled(Link)`
 const Header = () => (
   <header
     css={css`
-      background: #eee;
+      background: #234d96;
       border-bottom: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
@@ -45,6 +46,9 @@ const Header = () => (
       </NavLink>
       <NavLink to="/about" activeClassName="current-page">
         About
+      </NavLink>
+      <NavLink to="/contact" activeClassName="current-page">
+        Contact
       </NavLink>
     </nav>
     {/* navigation */}
